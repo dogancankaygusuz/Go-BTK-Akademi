@@ -4,6 +4,7 @@ import (
 	"golesson/arrays"
 	"golesson/conditionals"
 	"golesson/loops"
+	"golesson/slices"
 	"golesson/variables"
 )
 
@@ -14,4 +15,5 @@ func main() {
 	arrays.DemoArrays()
 	arrays.ArraysDemo2()
 	arrays.ArraysDemo3()
+	slices.SlicesDemo()
 }
