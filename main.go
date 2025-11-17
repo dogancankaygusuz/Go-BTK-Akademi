@@ -4,8 +4,10 @@ import (
 	"fmt"
 	"golesson/arrays"
 	"golesson/conditionals"
+	"golesson/for_range"
 	"golesson/functions"
 	"golesson/loops"
+	"golesson/maps"
 	"golesson/slices"
 	"golesson/variables"
 )
@@ -37,4 +39,8 @@ func main() {
 
 	sayilar := []int{4, 52, 34, 14, 5, 12}
 	fmt.Println(functions.ToplaVariadic(sayilar...))
+
+	maps.Demo1()
+
+	for_range.Demo1()
 }
