@@ -8,7 +8,9 @@ import (
 	"golesson/functions"
 	"golesson/loops"
 	"golesson/maps"
+	"golesson/pointers"
 	"golesson/slices"
+	"golesson/structs"
 	"golesson/variables"
 )
 
@@ -43,4 +45,10 @@ func main() {
 	maps.Demo1()
 
 	for_range.Demo1()
+
+	p1 := 3
+	pointers.Demo1(&p1)
+	fmt.Println(p1)
+
+	structs.Deneme()
 }
