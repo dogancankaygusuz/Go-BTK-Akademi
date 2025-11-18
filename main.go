@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"golesson/arrays"
+	"golesson/channels"
 	"golesson/conditionals"
 	"golesson/for_range"
 	"golesson/functions"
@@ -52,4 +53,18 @@ func main() {
 
 	structs.Deneme()
 	structs.Demo2()
+
+	// go goroutines.CiftSayilar()
+	// go goroutines.TekSayilar()
+
+	ciftSayiCn := make(chan int)
+	tekSayiCn := make(chan int)
+
+	// Asenkron eşlenik zamanda çalışması için kullanıyoruz
+	go channels.CiftSayilar(ciftSayiCn)
+	go channels.TekSayilar(tekSayiCn)
+
+	ciftSayiToplam, tekSayiToplam := <-ciftSayiCn, <-tekSayiCn
+	carpim := ciftSayiToplam * tekSayiToplam
+	fmt.Println("Carpim: ", carpim)
 }
