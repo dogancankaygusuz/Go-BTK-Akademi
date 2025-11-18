@@ -51,4 +51,5 @@ func main() {
 	fmt.Println(p1)
 
 	structs.Deneme()
+	structs.Demo2()
 }
