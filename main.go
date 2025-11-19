@@ -7,6 +7,7 @@ import (
 	"golesson/conditionals"
 	"golesson/for_range"
 	"golesson/functions"
+	"golesson/interfaces"
 	"golesson/loops"
 	"golesson/maps"
 	"golesson/pointers"
@@ -67,4 +68,6 @@ func main() {
 	ciftSayiToplam, tekSayiToplam := <-ciftSayiCn, <-tekSayiCn
 	carpim := ciftSayiToplam * tekSayiToplam
 	fmt.Println("Carpim: ", carpim)
+
+	interfaces.Demo1()
 }
