@@ -5,6 +5,7 @@ import (
 	"golesson/arrays"
 	"golesson/channels"
 	"golesson/conditionals"
+	deferstatement "golesson/defer_statement"
 	"golesson/for_range"
 	"golesson/functions"
 	"golesson/interfaces"
@@ -70,4 +71,7 @@ func main() {
 	fmt.Println("Carpim: ", carpim)
 
 	interfaces.Demo1()
+
+	deferstatement.B()
+	deferstatement.Test()
 }
