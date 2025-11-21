@@ -6,6 +6,7 @@ import (
 	"golesson/channels"
 	"golesson/conditionals"
 	deferstatement "golesson/defer_statement"
+	errorhandling "golesson/error_handling"
 	"golesson/for_range"
 	"golesson/functions"
 	"golesson/interfaces"
@@ -74,4 +75,6 @@ func main() {
 
 	deferstatement.B()
 	deferstatement.Test()
+
+	errorhandling.Demo1()
 }
