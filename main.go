@@ -77,4 +77,9 @@ func main() {
 	deferstatement.Test()
 
 	errorhandling.Demo1()
+
+	interfaces.Demo3()
+
+	errorhandling.Demo2()
+	fmt.Println(errorhandling.TahminMetotu(3))
 }
