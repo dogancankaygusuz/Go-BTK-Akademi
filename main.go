@@ -14,6 +14,7 @@ import (
 	"golesson/maps"
 	"golesson/pointers"
 	"golesson/slices"
+	stringfunctions "golesson/string_functions"
 	"golesson/structs"
 	"golesson/variables"
 )
@@ -82,4 +83,6 @@ func main() {
 
 	errorhandling.Demo2()
 	fmt.Println(errorhandling.TahminMetotu(3))
+
+	stringfunctions.Demo1()
 }
