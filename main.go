@@ -13,6 +13,7 @@ import (
 	"golesson/loops"
 	"golesson/maps"
 	"golesson/pointers"
+	"golesson/restful"
 	"golesson/slices"
 	stringfunctions "golesson/string_functions"
 	"golesson/structs"
@@ -85,4 +86,7 @@ func main() {
 	fmt.Println(errorhandling.TahminMetotu(3))
 
 	stringfunctions.Demo1()
+	stringfunctions.Demo2()
+
+	restful.Demo1()
 }
