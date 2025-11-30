@@ -13,6 +13,7 @@ import (
 	"golesson/loops"
 	"golesson/maps"
 	"golesson/pointers"
+	"golesson/project"
 	"golesson/restful"
 	"golesson/slices"
 	stringfunctions "golesson/string_functions"
@@ -90,4 +91,6 @@ func main() {
 
 	restful.Demo1()
 	restful.Demo2()
+
+	project.GetAllProducts()
 }
