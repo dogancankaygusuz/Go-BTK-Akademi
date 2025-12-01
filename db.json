@@ -1,11 +1,50 @@
 {
   "products": [
-    { "id": 1, "productName": "Laptop", "categoryId": 1, "unitPrice": 5000.99 },
-    { "id": 2, "productName": "Mouse", "categoryId": 1, "unitPrice": 50.99 },
-    { "id": 3, "productName": "Camera", "categoryId": 1, "unitPrice": 3000.99 }
+    {
+      "id": "1",
+      "productName": "Laptop",
+      "categoryId": 1,
+      "unitPrice": 5000.99
+    },
+    {
+      "id": "2",
+      "productName": "Mouse",
+      "categoryId": 1,
+      "unitPrice": 50.99
+    },
+    {
+      "id": "3",
+      "productName": "Camera",
+      "categoryId": 1,
+      "unitPrice": 3000.99
+    },
+    {
+      "id": 4,
+      "productName": "Headphone",
+      "categoryId": 1,
+      "unitPrice": 2500.49
+    },
+    {
+      "id": 4,
+      "productName": "Headphone",
+      "categoryId": 1,
+      "unitPrice": 2500.49
+    },
+    {
+      "id": 4,
+      "productName": "Headphone",
+      "categoryId": 1,
+      "unitPrice": 2500.49
+    }
   ],
   "categories": [
-    { "id": 1, "categoryName": "Computers"},
-    { "id": 2, "categoryName": "Videos"}
+    {
+      "id": "1",
+      "categoryName": "Computers"
+    },
+    {
+      "id": "2",
+      "categoryName": "Videos"
+    }
   ]
 }

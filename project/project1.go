@@ -1,6 +1,7 @@
 package project
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -32,4 +33,18 @@ func GetAllProducts() {
 	var products []Product
 	json.Unmarshal(bodyBytes, &products)
 	fmt.Println(products)
+}
+
+func AddProduct() {
+	product := Product{Id: 4, ProductName: "Headphone", CategoryId: 1, UnitPrice: 2500.49}
+	jsonProduct, err := json.Marshal(product)
+
+	response, err := http.Post("http://localhost:3000/products", "application/json;charset=utf-8", bytes.NewBuffer(jsonProduct))
+
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	defer response.Body.Close()
+	fmt.Println("Ürün Kaydedildi")
 }
